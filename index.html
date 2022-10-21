@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Saish's Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+    }
+    .body1 .other_part .header:hover{
+        background-color: rgba(121, 117, 117, 0.3);
+        transition: all 1s ease-out;
+    }
+    .other_part{
+        z-index: 1;
+    }
+    .left {
+        display: inline-block;
+        padding: 5px;
+        color: black;
+        text-align: center;
+    }
+    .left h4{
+        padding: 0;
+        margin: 0;
+        color: black;
+    }
+    .left img {
+        width: 100px;
+        border-radius: 20px;
+    }
+    .navbar{
+        /* border: 2px solid green; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0px;
+        /* z-index: 2; */
+    }
+    .navbar li{
+        padding: 5px 15px;
+        list-style-type: none;
+    }
+    .navbar li a {
+        text-decoration: none;
+        color: black;
+    }
+    .navbar li a:hover, .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(248, 82, 82);
+    }
+    .search{
+        position: absolute;
+        right: 200px;
+        top: 50px;
+        border: none;
+        box-shadow: none;
+    }
+    .right {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        background-color: white;
+        color: black;
+        padding: 5px;
+        border: 2px solid black;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: black;
+        color: white;
+    }
+    .container {
+        position: absolute;
+        display: inline-block;
+        padding: 10px;
+        left: 33%;
+        text-align: center;
+    }
+    .container h1{
+        color: black;
+        font-size: 50px;
+        animation: title 0.9s ease-out 0s forwards 1 running;
+        width: 500px;
+    }
+    .container p{
+        color: black;
+        width: 500px;
+        animation: title 0.9s ease-out 0s forwards 1 running;
+    }
+    @keyframes title{
+        0%{transform: float(0.0);}
+        10%{transform: scale(0.1);}
+        20%{transform: scale(0.2);}
+        30%{transform: scale(0.3);}
+        40%{transform: scale(0.4);}
+        50%{transform: scale(0.5);}
+        60%{transform: scale(0.6);}
+        70%{transform: scale(0.7);}
+        80%{transform: scale(0.8);}
+        90%{transform: scale(0.9);}
+        100%{transform: scale(1);}
+    }
+    .container #form{
+        margin: 35px;
+    }
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 400px;
+        border: 2px solid black;
+        margin: 15px 10px;
+        height: 30px;
+    }
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+    .back_image{
+        width: 100%;
+        height: 300%;
+        z-index: -1;
+        position: absolute;
+        opacity: 0.8;
+    }
+    .cateogary_cont{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 50%;
+    }
+    .cateogary_cont .first_cont{
+        text-align: center;
+        width: 500px;
+        color: black;
+    }
+    .cateogary_cont img{
+        width: 400px;
+        height: 250px;
+    }
+    .cateogary_cont2{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10%;
+    }
+    .cateogary_cont2 .second_cont{
+        text-align: center;
+        width: 500px;
+        color: black;
+    }
+    .cateogary_cont2 img{
+        width: 400px;
+        height: 250px;
+    }
+    .cateogary_cont3{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10%;
+    }
+    .cateogary_cont3 .third_cont{
+        text-align: center;
+        width: 500px;
+        color: black;
+    }
+    .cateogary_cont3 img{
+        width: 400px;
+        height: 250px;
+    }
+    .container2{
+        color: black;
+        margin: 0px;
+        padding: 0px;
+        bottom: 0px;
+        top: 1930px;
+        left: 38%;
+        position: absolute;
+        display: inline-block;
+    }
+</style>
+<body>
+    <div class="body1">
+        <img src=".\images3\main.jpg" alt="main_back" class="back_image">
+        <div class="other_part">
+            <header class="header">
+                <div class="left">
+                    <img src=".\images3\logo.png" alt="logo">
+                    <h4>Saish's Fitness</h4>
+                </div>
+                <div class="mid">
+                    <ul class="navbar">
+                        <li><a href="index_02.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="fit_cal.html">Fitness Calculator</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Search..">
+                </div>
+                <div class="right">
+                    <button class="btn">Call Us Now</button>
+                    <button class="btn">Email Us</button>
+                </div>
+            </header>
+            <div class="container">
+                <h1>WELCOME TO FITNESS</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, debitis culpa earum accusantium quam commodi sit dicta veniam illum officiis!</p>
+                <form action="Connect.php" id="form" method="post">
+                    <div class="form-group">
+                        <input type="text" name="Name" placeholder="Enter your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="Age" placeholder="Enter your Age">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="Gender" placeholder="Enter your Gender">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="Locality" placeholder="Enter your Locality">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="Email" placeholder="Enter your Email Id">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="Number" placeholder="Enter your Phone Number">
+                    </div>
+                    <button class="btn">Submit</button>
+                </form>
+            </div>
+            <div class="cateogary_cont">
+                <img src=".\images3\gym1.webp" alt="gym_content">
+                <div class="first_cont">
+                    <h2>TRAINING</h2>
+                    <p>Our Fitness club provides best training in terms of areobics, yoga, gyming and also health. We will help you improving your physical and mental health by our best trainee. We assured you the improvement in the field you want to start. <br> So, I hope you will JOIN US.</p>
+                </div>
+            </div>
+            <div class="cateogary_cont2">
+                <div class="second_cont">
+                    <h2>OUR HEALTH PRODUCTS</h2>
+                    <p>Along with improving your power physically it is also importent to maintain our inner health. So, for this we are came with our best suggested products health products which will help you more in improving yourself more betterly and fastly.</p>
+                </div>
+                <img src=".\images3\gym4.png" alt="gym_content">
+            </div>
+            <div class="cateogary_cont3">
+                <img src=".\images3\gym5.webp" alt="gym_content">
+                <div class="third_cont">
+                    <h2>OUR WORKOUT PRODUCTS</h2>
+                    <p>For doing the exercise at your own at your home or in our centre we are came up with the workout products required for doing exercise. These products will help you in enhancing your motivation towwards the world of health and will set your mind to be health conscious.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <h5>India.Inc.2022@PVT.LTD.ALL rights reserved@ copywrite</h5>
+    </div>
+</body>
+</html>
